@@ -18,18 +18,18 @@ This project implements a **custom authentication system** in Django using a cus
 
 ## Project Structure
 
-authentication_system/
+authentication_system/<br>
 │
-├── accounts/ # Django app for user management <br>
+├── accounts/ # Django app for user management<br>
 │ ├── models.py # Custom UserAccount model<br>
 │ ├── views.py # Registration, Login, and other views<br>
 │ ├── forms.py # (Optional) Forms for user input handling<br>
-│ ├── urls.py # URLs for accounts app
-│ └── templates/ # HTML templates
-│
-├── authentication_system/ # Project root configuration
-│ ├── settings.py # Project settings (contains AUTH_USER_MODEL)
-│ ├── urls.py # Main URL configuration
-│ └── wsgi.py / asgi.py # WSGI/ASGI entry points
-│
-└── manage.py # Django management script
+│ ├── urls.py # URLs for accounts app<br>
+│ └── templates/ # HTML templates<br>
+│<br>
+├── authentication_system/ # Project root configuration<br>
+│ ├── settings.py # Project settings (contains AUTH_USER_MODEL)<br>
+│ ├── urls.py # Main URL configuration<br>
+│ └── wsgi.py / asgi.py # WSGI/ASGI entry points<br>
+│<br>
+└── manage.py # Django management script<br>
