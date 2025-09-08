@@ -1,31 +1,35 @@
-# 💻 Django Login Page with MySQL | Python 3.11
+# Django Custom User Authentication System
 
-This project is a user authentication system built using **Django (Python 3.11)** and **MySQL**, with a clean and responsive **HTML/CSS** frontend. It allows users to register, log in, and log out securely using Django's built-in authentication framework.
-
----
-
-## 🚀 Features
-
-- ✅ User Registration with form validation  
-- ✅ Secure Login & Logout  
-- ✅ Password hashing using Django's default auth system  
-- ✅ MySQL database integration  
-- ✅ Clean UI using HTML and CSS  
-- ✅ Django views, templates, and URL routing  
-- ✅ Ready to deploy or extend for any Django-based application
+This project implements a **custom authentication system** in Django using a custom `UserAccount` model based on `AbstractUser`. It supports **username/email login**, **OTP verification**, and additional fields like phone number. The project is designed for secure and scalable authentication in modern web applications.
 
 ---
 
-## 🛠️ Tech Stack
+## Features
 
-| Layer       | Technology           |
-|-------------|----------------------|
-| Backend     | Django (Python 3.11) |
-| Frontend    | HTML, CSS            |
-| Database    | MySQL                |
-| Auth        | Django's built-in authentication |
+- Custom user model (`UserAccount`) extending `AbstractUser`
+- Support for both **username and email-based login**
+- OTP (One-Time Password) verification for email and phone during registration
+- Secure password hashing using Django's built-in mechanisms
+- User-friendly registration and login pages
+- Customizable to add additional fields (e.g., employee ID, phone number)
+- Admin panel integration
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
+authentication_system/
+│
+├── accounts/ # Django app for user management
+│ ├── models.py # Custom UserAccount model
+│ ├── views.py # Registration, Login, and other views
+│ ├── forms.py # (Optional) Forms for user input handling
+│ ├── urls.py # URLs for accounts app
+│ └── templates/ # HTML templates
+│
+├── authentication_system/ # Project root configuration
+│ ├── settings.py # Project settings (contains AUTH_USER_MODEL)
+│ ├── urls.py # Main URL configuration
+│ └── wsgi.py / asgi.py # WSGI/ASGI entry points
+│
+└── manage.py # Django management script
