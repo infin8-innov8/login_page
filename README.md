@@ -20,10 +20,10 @@ This project implements a **custom authentication system** in Django using a cus
 
 authentication_system/
 │
-├── accounts/ # Django app for user management
-│ ├── models.py # Custom UserAccount model
-│ ├── views.py # Registration, Login, and other views
-│ ├── forms.py # (Optional) Forms for user input handling
+├── accounts/ # Django app for user management <br>
+│ ├── models.py # Custom UserAccount model<br>
+│ ├── views.py # Registration, Login, and other views<br>
+│ ├── forms.py # (Optional) Forms for user input handling<br>
 │ ├── urls.py # URLs for accounts app
 │ └── templates/ # HTML templates
 │
